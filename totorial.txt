@@ -18,5 +18,9 @@ git remote add origin "<nome_do_repositorio>" vincula o repositório que os arqu
 
 git push --set--upstream origin master define a branch usada, que será a master
 
-git reflog para verificar o histórico de atualizações (a versão mais atual é a do topo)
+git reflog para verificar o histórico de atualizações (a versão mais atual é a do topo)(o código em amarelo na esquerda de cada linha é o id de cada versão, isso será importante para o próximo comando)
+
+
+git reset --hard <id_da_versão> para tornar qualquer versão que você já teve para a versão atual do código (consultar antes de fazer isso!!!)
+
 
