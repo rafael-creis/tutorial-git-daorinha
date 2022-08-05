@@ -1,2 +1,19 @@
 git init para inicializar uma pasta git
 
+git status para verificar se o local está atualizado ou não
+
+git add "<nome_do_arquivo>" para adicionar um arquivo para o controle de versão
+
+git add . para adicionar todos arquivos pendentes para o controle de versão
+
+git commit -m "<mensagem_do_commit>" para preparar os arquivos para envio
+
+caso não tenha conta vinculada ainda, irá aparecer para configurar nome e email
+
+email -> git config --global user.email "<email>"
+
+nome -> git config --global user.nome "<nome>"
+
+git remote add origin "<nome_do_repositorio>" vincula o repositório que os arquivos serão enviados com a pasta
+
+git push --set--upstream origin master define a branch usada, que será a master
