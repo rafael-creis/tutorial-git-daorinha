@@ -1,0 +1,2 @@
+git init para inicializar uma pasta git
+
