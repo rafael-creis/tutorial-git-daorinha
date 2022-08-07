@@ -50,7 +50,9 @@ git checkout -b <nome_da_nova_branch> <nome_da_branch_base>
 4. Voltar para a branch principal e realizar um git pull para o código não ficar desatualizado (e fuder o sistema no processo)
 5. Com todos esses passos feitos -> CORRETAMENTE <-, agora pode dar um git merge com a nova branch
 
+E com isso eu espero que sejam todos os passos para não perder seu emprego
 
+As vezes, você não vai poder bota seu código novo diretamente na branch principal, e só vai poder colocar seu código se ele for aprovado por algum outro programador. Neste caso, você precisa fazer um pull request, para que o programador aprove seu código, antes que possa ser incluido no código principal.
 
 
 
