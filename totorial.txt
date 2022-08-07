@@ -29,6 +29,30 @@ git branch <nome_da_nova_branch> cria uma nova branch para ser utilizada
 
 git checkout <nome_da_branch> muda entre as branchs
 
+caso você queira unir um código novo com uma outra branch. Vamos maginar que você está na brach staging, e você quer unir o código com a branch principal, que nesse caso é a branch master.
+Primeiramente, você entra na branch que vai estar -> RECEBENDO <- as atualizações, que neste caso é a branch master. Nós utilizamos o comando para entrar nessa branch, que você já viu. Com isso, nós vamos mergear, ou seja, unir os códigos usando o comando:
+
+git merge <nome_da_branch_que_você_está_puxando>
+
+Nós queremos puxar da branch staging para a branch master, então escrevemos o seguinte comando quando nós estivermos na branch master:
+
+git merge staging
+
+Após isso, nós damos um git push para atualizar o código, e ele será mergido com sucesso.
+
+git pull puxa todas as atualizações realizadas em uma branch para sua máquina, deixando tudo atualizado
+
+Passo a passo de como não fuder o sistema:
+1. Primeiro passo: vá para a branch principal e de git pull
+2. Criar uma nova branch com base na branch principal. Para fazer isso em um só comando:
+git checkout -b <nome_da_nova_branch> <nome_da_branch_base>
+3. 
+
+
+
+
+
+
 
 
 
