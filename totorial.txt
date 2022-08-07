@@ -46,7 +46,9 @@ Passo a passo de como não fuder o sistema:
 1. Primeiro passo: vá para a branch principal e de git pull
 2. Criar uma nova branch com base na branch principal. Para fazer isso em um só comando:
 git checkout -b <nome_da_nova_branch> <nome_da_branch_base>
-3. 
+3. Realizar as alterações na branch nova e adicionar o novo código ao sistema de versão (git add e git commit)
+4. Voltar para a branch principal e realizar um git pull para o código não ficar desatualizado (e fuder o sistema no processo)
+5. Com todos esses passos feitos -> CORRETAMENTE <-, agora pode dar um git merge com a nova branch
 
 
 
