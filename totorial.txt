@@ -54,6 +54,17 @@ E com isso eu espero que sejam todos os passos para não perder seu emprego
 
 As vezes, você não vai poder bota seu código novo diretamente na branch principal, e só vai poder colocar seu código se ele for aprovado por algum outro programador. Neste caso, você precisa fazer um pull request, para que o programador aprove seu código, antes que possa ser incluido no código principal.
 
+Como fazer isso você me pergunta. Então, eu te explico.
+
+1. Primeiramente, fazer os passos 1-3 do tutorial anterior
+2. Após isso, você dá um git push para enviar o código para as nuvens (vai aparecer para você realizar o comando correto nesse momento, apenas copie e cole e faça de novo 😉)
+3. (isso aqui é para github, depois procurar como o da sua empresa faz) Agora você volta para a página do githube é possível ver que a branch onde você enviou o código recebeu um push, e o botão grande verde ao lado diz "comparar e fazer um pull request". Clica nese botão verde!
+4. Agora, você define para qual branch voce vai mandar isso, onde está escrito base: main, você define sua branch principal, que, neste caso, é a branch master.
+5. Agora abre um novo ecossistema, onde você pode dar o nome do pull request e adicionar algum comentário para detalhar melhor o que foi feito no seu novo código.
+6. Depois de detalhar tudo isso, aperte no grande botão verde escrito "create pull request" e seu código será enviado para atualização.
+7. Com isso, seu código será aprovado ou reprovado. Caso for aprovado, ele irá para a branch principal. Caso ele for recusado, ele receberá uma explicação do motivo da recusa, e você irá ler o motivo, consertar os erros feitos, fazer todas as correções, e dar um novo commit, marcando as pessoas comentaram que seu código não estava correto, dizendo que voxê fez as alterações solicitadas,  sem precisar abrir um novo pull request.
+
+
 
 
 
