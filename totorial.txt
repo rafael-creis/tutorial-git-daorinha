@@ -64,6 +64,17 @@ Como fazer isso você me pergunta. Então, eu te explico.
 6. Depois de detalhar tudo isso, aperte no grande botão verde escrito "create pull request" e seu código será enviado para atualização.
 7. Com isso, seu código será aprovado ou reprovado. Caso for aprovado, ele irá para a branch principal. Caso ele for recusado, ele receberá uma explicação do motivo da recusa, e você irá ler o motivo, consertar os erros feitos, fazer todas as correções, e dar um novo commit, marcando as pessoas comentaram que seu código não estava correto, dizendo que voxê fez as alterações solicitadas,  sem precisar abrir um novo pull request.
 
+hotfix é aberto de uma tag da versão que está em produção
+
+nenhuma branch está em produção (pelo visto)
+
+o git não é uma ferramenta para saber qual branch está em produção
+
+respeitar o padrão de nomenclatura
+imagina uma branch de release -> nome dela é release_<nome_da_branch>
+
+bug fix não é mais urgente
+
 
 
 
