@@ -27,6 +27,9 @@ Uma branch sendo exclusivamente dedicada ao lançamento permite que uma equipe s
 Criando ramificação de features:
 git flow release start 0.1.0
 
+quando terminar, comitar todos os consertos de último minuto, e executar o comando:
+git flow release finish '0.1.0'
+
 
 
 
