@@ -24,11 +24,18 @@ git flow feature finish feature_<nome_da_branch_>
 Uma vez que a ramificação develop adquiriu recursos suficientes para um lançamento (ou uma data de lançamento predeterminada está se aproximando), você bifurca uma ramificação release a partir da ramificação develop. Criar esta ramificação dá início ao próximo ciclo de lançamento, portanto nenhum novo recurso pode ser adicionado depois deste ponto — apenas atualizações de segurança, geração de documentação e outras tarefas relacionadas ao lançamento devem ir nesta ramificação. Quando estiver pronta para ser lançada, a ramificação release passa por merge para a ramificação main e é marcada com o número da versão. Ela também deve passar por merge de volta para a ramificação develop, que pode ter progredido desde que o lançamento foi iniciado.
 Uma branch sendo exclusivamente dedicada ao lançamento permite que uma equipe se dedique inteiramente nessa branch, aperfeiçoando esta versão do lançamento, enquanto outras equipes trabalham em outras branches. Também ajuda a criar fases de desenvolvimento bem definidas, pois é fácil dizer "Esta semana a gente está se preparando para a versão 4.0" e ver isto na estrutura do repositório
 
-Criando ramificação de features:
+Criando ramificação de release:
 git flow release start 0.1.0
 
+quando terminar, comitar todos os consertos de último minuto, e executar o comando:
+git flow release finish '0.1.0'
 
+- Branch Hotfix
 
+As ramificações de manutenção ou de “hotfix” são usadas para corrigir com rapidez lançamentos de produção. As ramificações de hotfix se parecem muito com ramificações release e feature, com a diferença de serem baseadas na ramificação main ao invés da ramificação develop. Esta é a única ramificação que deve ser bifurcada direto da ramificação main. Assim que a correção é concluída, deve ser feito o merge dela tanto na ramificação main quanto na ramificação develop (ou na ramificação release atual) e a ramificação main deve ser marcada com um número de versão atualizado.
+
+Criando ramificação de hotfix:
+git flow hotfix start hotfix_branch
 
 
 
