@@ -1,0 +1,18 @@
+O Gitflow é apenas uma ideia abstrata do fluxo de trabalho Git, ou seja, ele dita que tipos de ramificações configurar e como fazer o merge.
+
+- Branches Master e Develop
+
+Ao invés de uma única ramificação master, esse fluxo de trabalho usa duas ramificações para registrar o histórico do projeto. A ramificação master armazena o histórico do lançamento oficial, e a ramificação develop serve como uma ramificação de integração para recursos. Também é conveniente marcar todos os commits na ramificação master com um número de versão.
+
+A versão develop vai manter o histórico completo do projeto, enquanto a versão master vai conter uma versão abreviada do projeto. Outros desenvolvedores agora vão precisar clonar o repositório central e criar uma ramificação de rastreamento para a de develop.
+
+- Branches Feature/Recurso
+
+Cada novo recurso deve residir na própria ramificação, que pode ser enviada por push para o repositório central para backup/colaboração. No entanto, em vez de serem ramificações da ramificação principal, as ramificações feature usam a ramificação develop como pai. Quando um recurso é concluído, ele passa por merge de volta para a ramificação de desenvolvimento. Os recursos não devem nunca interagir direto com a ramificação master.
+Ou seja, as ramificações -> feature sempre vão sair da develop <-
+
+Criando ramificação de recurso:
+git flow feature start feature_<nome_da_branch>
+
+Ao finalizar, e precisar dar o merge entre sua noma branch e a develop, usar o comando:
+git flow feature finish feature_<nome_da_branch_>
