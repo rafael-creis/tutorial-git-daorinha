@@ -20,7 +20,6 @@ git push --set--upstream origin <nome_da_branch> define a branch que receberá o
 
 git reflog para verificar o histórico de atualizações (a versão mais atual é a do topo)(o código em amarelo na esquerda de cada linha é o id de cada versão, isso será importante para o próximo comando)
 
-
 git reset --hard <id_da_versão> para tornar qualquer versão que você já teve para a versão atual do código (consultar antes de fazer isso!!!)
 
 git branch mostra quais são as branchs disponíveis no momento (a branch marcada com '*' e verde é a que está sendo usadqa no momento)
@@ -28,6 +27,8 @@ git branch mostra quais são as branchs disponíveis no momento (a branch marcad
 git branch <nome_da_nova_branch> cria uma nova branch para ser utilizada
 
 git checkout <nome_da_branch> muda entre as branchs
+
+git branch -d <nome_da_branch> para deletar uma branch (lembre-se, você não pode estar na branch wue está sendo deletada)
 
 caso você queira unir um código novo com uma outra branch. Vamos maginar que você está na brach staging, e você quer unir o código com a branch principal, que nesse caso é a branch master.
 Primeiramente, você entra na branch que vai estar -> RECEBENDO <- as atualizações, que neste caso é a branch master. Nós utilizamos o comando para entrar nessa branch, que você já viu. Com isso, nós vamos mergear, ou seja, unir os códigos usando o comando:
